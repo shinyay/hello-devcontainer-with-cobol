@@ -6,10 +6,32 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "bitlang.cobol"
+                "bitlang.cobol",
+                "streetsidesoftware.code-spell-checker",
+                "ibm.zopeneditor",
+                "broadcom.cobol-language-support",
+                "kainino.backgroundcopy"
             ],
             "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.rulers": [6, 7, 72],
+                "editor.tabSize": 1,
+                "editor.insertSpaces": true,
+                "editor.detectIndentation": false,
+                "files.eol": "\n",
+                "[cobol]": {
+                    "editor.wordBasedSuggestions": "off",
+                    "editor.semanticHighlighting.enabled": true,
+                    "editor.formatOnType": true,
+                    "editor.formatOnPaste": true,
+                    "editor.formatOnSave": true,
+                    "editor.renderWhitespace": "all"
+                },
+                "coboleditor.preserve_additional_spaces": true,
+                "coboleditor.format.indicate_paragraph": true,
+                "coboleditor.format.align_data_division": true,
+                "coboleditor.format.init_program_division": true,
+                "coboleditor.format.init_division": true
             }
         }
     },
