@@ -25,6 +25,39 @@ This template provides a development environment for COBOL using Dev Container f
 
 ## Installation
 
+1. Create `.devcontainer` directory:
+```shell
+mkdir -p .devcontainer
+```
+
+2. Create the following files in `.devcontainer`:
+
+### Dockerfile
+Container definition that sets up the COBOL development environment:
+- Uses Ubuntu 22.04 slim as the base image
+- Multi-stage build to minimize image size
+- Installs GnuCOBOL compiler and required libraries
+- Includes essential development tools (git, curl)
+- Optimized to reduce container size by only including necessary components
+
+### compose.yaml
+Docker Compose configuration for container orchestration:
+- Builds container from local Dockerfile
+- Mounts workspace directory for source code access
+- Sets resource limits (memory: 1GB, CPU shares)
+- Keeps container running with `sleep infinity`
+- Enables init process for proper signal handling
+
+### devcontainer.json
+VS Code Dev Container configuration:
+- Specifies the container name and workspace location
+- Integrates with Docker Compose configuration
+- Installs COBOL extension for syntax highlighting
+- Configures terminal settings for better development experience
+- Sets root as the remote user for development
+
+3. VS Code will automatically detect the Dev Container configuration
+
 ## References
 
 ## Licence
