@@ -9,7 +9,8 @@
                 "bitlang.cobol",
                 "streetsidesoftware.code-spell-checker",
                 "broadcom.cobol-language-support",
-                "kainino.backgroundcopy"
+                "kainino.backgroundcopy",
+                "ms-vscode.makefile-tools"
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
