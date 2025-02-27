@@ -1,39 +1,73 @@
-# Dev Container Template for COBOL
+# COBOL Development Container Sample
 
-This is a template for creating a dev container for COBOL development.
+This is a sample project demonstrating COBOL development using Visual Studio Code Dev Containers. The project includes a simple COBOL program that displays a welcome message and the current date.
 
-## Description
-This template provides a development environment for COBOL using Dev Container functionality. It includes GnuCOBOL compiler and necessary tools for COBOL development.
+## Prerequisites
 
-## Demo
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Docker](https://www.docker.com/)
+- [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+## Getting Started
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/hello-devcontainer-with-cobol.git
+   cd hello-devcontainer-with-cobol
+   ```
+
+2. Open the project in Visual Studio Code:
+   ```bash
+   code .
+   ```
+
+3. When prompted "Reopen in Container" by VS Code, click on it.
+   - Alternatively, press `F1`, type "Dev Containers: Reopen in Container" and press Enter
+
+4. Wait for the Dev Container to build and start. This may take a few minutes the first time.
+
+## Building and Running the Application
+
+Once inside the Dev Container, you can build and run the application using VS Code tasks:
+
+### Using VS Code Command Palette (Ctrl+Shift+P or Cmd+Shift+P):
+1. Build the application:
+   - Open Command Palette and type "Tasks: Run Build Task" or press `Ctrl+Shift+B`
+
+2. Run the application:
+   - Open Command Palette
+   - Type "Tasks: Run Task"
+   - Select "run"
+
+### Using Terminal in VS Code:
+1. Build the application:
+   ```bash
+   make
+   ```
+
+2. Run the application:
+   ```bash
+   make run
+   ```
+
+3. Clean build artifacts:
+   ```bash
+   make clean
+   ```
+
+## Project Structure
+
+- `src/hello.cob`: Main COBOL source file
+- `Makefile`: Build configuration
+- `.devcontainer/`: Dev Container configuration files
+- `bin/`: Build output directory (created during build)
 
 ## Features
-- GnuCOBOL compiler
-- Development Container support
-- VS Code integration
-- Docker based environment
 
-## Requirement
-- Docker Engine
-- VS Code
-- Dev Container extension for VS Code
-
-## Usage
-1. Clone this repository
-2. Open in VS Code
-3. Click "Reopen in Container" when prompted
-4. Compile the sample program:
-```shell
-cd src
-cobc -x -o hello hello.cob
-```
-5. Run the compiled program:
-```shell
-./hello
-```
-
-## Sample Program
-The sample program is located in the `src` directory. It demonstrates basic COBOL syntax and program structure.
+The sample COBOL program demonstrates:
+- Basic COBOL program structure
+- Date handling
+- Formatted output display
 
 ## Installation
 
