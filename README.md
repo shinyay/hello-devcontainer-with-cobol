@@ -1,4 +1,6 @@
-# Title
+# Dev Container Temp[late for COBOL
+
+This is a template for creating a dev container for COBOL development.
 
 ## Description
 
