@@ -69,6 +69,35 @@ The sample COBOL program demonstrates:
 - Date handling
 - Formatted output display
 
+## VS Code COBOL Development Features
+
+This Dev Container comes with enhanced COBOL development support through the following VS Code extensions:
+
+- **COBOL Language Support** (bitlang.cobol): Basic COBOL syntax highlighting and language support
+- **Z Open Editor** (ibm.zopeneditor): Advanced COBOL editing features from IBM
+- **COBOL Language Support** (broadcom.cobol-language-support): Additional COBOL language features
+- **Code Spell Checker** (streetsidesoftware.code-spell-checker): Helps catch spelling errors in comments and strings
+- **Background Copy** (kainino.backgroundcopy): Improves handling of COPY statements
+
+### COBOL-Specific Settings
+
+The environment is preconfigured with COBOL-optimized settings:
+
+- **Column Rulers**: Visual guides at columns 6, 7, and 72 (standard COBOL card format)
+- **Indentation**: Single space indentation with spaces (not tabs)
+- **Format on Save**: Automatic code formatting when saving files
+- **Semantic Highlighting**: Enhanced syntax highlighting for better code readability
+- **Whitespace Visualization**: All whitespace characters are visible for precise formatting
+- **Division Formatting**: Automatic alignment and formatting of COBOL divisions
+
+### Editor Features
+
+- Automatic formatting on type, paste, and save
+- Smart COBOL-aware indentation
+- Disabled word-based suggestions for more accurate COBOL completions
+- Preserved additional spaces for maintaining COBOL formatting
+- Paragraph indicators for better code structure visualization
+
 ## Installation
 
 1. Create `.devcontainer` directory:
