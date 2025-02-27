@@ -1,4 +1,4 @@
-IDENTIFICATION DIVISION.
+       IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO.
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -6,11 +6,11 @@ IDENTIFICATION DIVISION.
            CONSOLE IS DISPLAY-DEVICE.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01 WS-CURRENT-DATE.
-          05 WS-YEAR                PIC 9(4).
-          05 WS-MONTH               PIC 9(2).
-          05 WS-DAY                 PIC 9(2).
-       01 WS-FORMATTED-DATE         PIC X(20).
+       01  WS-CURRENT-DATE.
+           05  WS-YEAR                PIC 9(4).
+           05  WS-MONTH               PIC 9(2).
+           05  WS-DAY                 PIC 9(2).
+       01  WS-FORMATTED-DATE          PIC X(20).
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
            PERFORM DISPLAY-WELCOME
