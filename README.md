@@ -22,6 +22,18 @@ This template provides a development environment for COBOL using Dev Container f
 1. Clone this repository
 2. Open in VS Code
 3. Click "Reopen in Container" when prompted
+4. Compile the sample program:
+```shell
+cd src
+cobc -x -o hello hello.cob
+```
+5. Run the compiled program:
+```shell
+./hello
+```
+
+## Sample Program
+The sample program is located in the `src` directory. It demonstrates basic COBOL syntax and program structure.
 
 ## Installation
 
