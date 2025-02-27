@@ -1,0 +1,17 @@
+{
+    "name": "COBOL Development Environment",
+    "dockerComposeFile": "compose.yaml",
+    "service": "cobol",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bitlang.cobol"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+    "remoteUser": "root"
+}
