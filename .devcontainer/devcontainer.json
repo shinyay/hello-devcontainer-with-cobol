@@ -8,7 +8,6 @@
             "extensions": [
                 "bitlang.cobol",
                 "streetsidesoftware.code-spell-checker",
-                "ibm.zopeneditor",
                 "broadcom.cobol-language-support",
                 "kainino.backgroundcopy"
             ],
