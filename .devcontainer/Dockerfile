@@ -1,4 +1,4 @@
-FROM ubuntu:22.04-slim AS builder
+FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/* /var/tmp/*
 
-FROM ubuntu:22.04-slim
+FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 COPY --from=builder /usr/bin/cobc /usr/bin/
 COPY --from=builder /usr/bin/cobcrun /usr/bin/
