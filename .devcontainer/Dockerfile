@@ -19,6 +19,7 @@ COPY --from=builder /lib/x86_64-linux-gnu/libtinfo.so* /lib/x86_64-linux-gnu/
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
+    make \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/* /var/tmp/*
