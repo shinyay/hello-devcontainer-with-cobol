@@ -24,15 +24,21 @@
                     "editor.formatOnType": true,
                     "editor.formatOnPaste": true,
                     "editor.formatOnSave": true,
-                    "editor.renderWhitespace": "all"
+                    "editor.renderWhitespace": "all",
+                    "editor.rulers": [6, 7, 11, 72],
+                    "files.trimTrailingWhitespace": false
                 },
                 "coboleditor.preserve_additional_spaces": true,
                 "coboleditor.format.indicate_paragraph": true,
                 "coboleditor.format.align_data_division": true,
                 "coboleditor.format.init_program_division": true,
-                "coboleditor.format.init_division": true
+                "coboleditor.format.init_division": true,
+                "coboleditor.format_on_save": true,
+                "coboleditor.maintain_sequence_numbers": false,
+                "coboleditor.sourceformat": "fixed"
             }
         }
     },
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "postCreateCommand": "cobc --version && echo 'COBOL Environment Ready'"
 }
