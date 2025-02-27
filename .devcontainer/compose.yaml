@@ -1,5 +1,6 @@
 services:
   cobol:
+    hostname: devcontainer
     build:
       context: .
       dockerfile: Dockerfile
