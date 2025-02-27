@@ -1,19 +1,27 @@
-# Dev Container Temp[late for COBOL
+# Dev Container Template for COBOL
 
 This is a template for creating a dev container for COBOL development.
 
 ## Description
+This template provides a development environment for COBOL using Dev Container functionality. It includes GnuCOBOL compiler and necessary tools for COBOL development.
 
 ## Demo
 
 ## Features
-
-- feature:1
-- feature:2
+- GnuCOBOL compiler
+- Development Container support
+- VS Code integration
+- Docker based environment
 
 ## Requirement
+- Docker Engine
+- VS Code
+- Dev Container extension for VS Code
 
 ## Usage
+1. Clone this repository
+2. Open in VS Code
+3. Click "Reopen in Container" when prompted
 
 ## Installation
 
